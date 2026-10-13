@@ -1,0 +1,147 @@
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.portada {
+    background-color: #10243a;
+    color: white;
+    padding: 80px 20px;
+}
+
+.portada h1 {
+    font-size: 40px;
+}
+
+.portada p {
+    font-size: 18px;
+}
+
+.seccion {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.fondo {
+    background-color: #f2f2f2;
+}
+
+.recuadro-imagen {
+    width: 100%;
+    min-height: 200px;
+    border: 2px solid #333;
+    padding: 5px;
+    text-align: center;
+}
+
+.recuadro-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.tarjeta {
+    margin-bottom: 20px;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.caja-flotante {
+    width: 48%;
+    float: left;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.limpiar {
+    clear: both;
+}
+
+.lista-consejos {
+    max-width: 600px;
+    margin: auto;
+}
+
+.lista-consejos li {
+    padding: 8px;
+}
+
+.multimedia {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+video, audio {
+    margin-top: 10px;
+}
+
+.video-externo {
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 16 / 9;
+}
+
+.video-externo iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.pie {
+    background-color: #10243a;
+    color: white;
+    padding: 20px;
+}
+
+.portada h1 {
+    animation: aparecer 2s;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .portada h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .portada h1 {
+        font-size: 30px;
+    }
+
+    .caja-flotante {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+</style>
